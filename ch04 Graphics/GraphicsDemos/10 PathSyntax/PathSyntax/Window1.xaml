@@ -1,0 +1,14 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="PathSyntax.Window1"
+	x:Name="Window"
+	Title="Window1"
+	Width="640" Height="480">
+
+    <Grid x:Name="LayoutRoot">
+        <Path Data="M102.54462,70.23341 C334.30664,139.95652 319.52708,68.061047 334.90466,141.65372 350.28223,215.2464 245.93443,222.93596 245.93443,222.93596 L108.63463,176.80283 C108.63463,176.80283 0.99169237,207.5581 71.289122,129.57152 141.58655,51.584929 -39.648747,109.80027 54.813358,55.97854 149.27546,2.1568101 102.54462,87.23341 102.54462,87.23341 z" 
+              Fill="#FFFFFFFF" HorizontalAlignment="Left" Height="185.803" Margin="26.878,38.132,0,0" Stretch="Fill" Stroke="#FF000000" VerticalAlignment="Top" Width="310.574"/>
+        <Path Data="M148.67735,299.22426 C190.41648,287.14188 290.96946,427.23709 317.33102,316.29887 343.69257,205.36066 515.04197,228.42697 515.04197,228.42697 L488.6808,118.58695 417.28499,106.5045 374.4475,164.7194 C374.4475,164.7194 295.36291,375.61263 421.67857,322.88932" Fill="#FFFFFFFF" HorizontalAlignment="Left" Height="253.811" Margin="148.677,106.505,0,0" Stretch="Fill" Stroke="#FF000000" VerticalAlignment="Top" Width="367.365"/>
+    </Grid>
+</Window>

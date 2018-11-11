@@ -1,0 +1,21 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="OpacityMask.Window1"
+	x:Name="Window"
+	Title="Window1"
+	Width="632" Height="444">
+
+    <Grid x:Name="LayoutRoot">
+        <Image Source="DrainCover.jpg" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Margin="123,30,197,127" Content="Button">
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.74,0.792" StartPoint="0.231,0.488">
+                    <GradientStop Color="#FFAEFF00" Offset="0"/>
+                    <GradientStop Color="#FFC11919" Offset="1"/>
+                    <GradientStop Color="#00ABFB00" Offset="0.479"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+        </Button>
+    </Grid>
+</Window>

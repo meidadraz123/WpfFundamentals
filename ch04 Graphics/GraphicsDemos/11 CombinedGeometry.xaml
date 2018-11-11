@@ -1,0 +1,81 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>		
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		
+		<TextBlock Text="Exclude an ellipse from a rectangle" Grid.Row="0" Grid.Column="0"/>
+		<Path Stroke="Black" StrokeThickness="3" Fill="Red" Grid.Row="0" Grid.Column="0" Margin="25,50,0,0">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Exclude">
+					<CombinedGeometry.Geometry1>
+						<RectangleGeometry Rect="0,0,200,50"/>
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<EllipseGeometry RadiusX="50" RadiusY="50" Center="100,25"/>
+					</CombinedGeometry.Geometry2>				
+				</CombinedGeometry>
+			</Path.Data>		
+		</Path>
+		<TextBlock Text="Intersect a rectangle and a ellipse" Grid.Row="1" Grid.Column="0"/>
+		<Path Stroke="Black" StrokeThickness="3" Fill="Red" Grid.Row="1" Grid.Column="0" Margin="25,50,0,0">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Intersect">
+					<CombinedGeometry.Geometry1>
+						<RectangleGeometry Rect="0,0,200,50"/>
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<EllipseGeometry RadiusX="50" RadiusY="50" Center="100,25"/>
+					</CombinedGeometry.Geometry2>				
+				</CombinedGeometry>
+			</Path.Data>		
+		</Path>		
+		<TextBlock Text="Exclude a rectangle from an ellipse" Grid.Row="0" Grid.Column="1"/>
+		<Path Stroke="Black" StrokeThickness="3" Fill="Red" Grid.Row="0" Grid.Column="1" Margin="25,50,0,0">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Exclude">
+					<CombinedGeometry.Geometry1>
+						<EllipseGeometry RadiusX="50" RadiusY="50" Center="100,25"/>
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<RectangleGeometry Rect="0,0,200,50"/>
+					</CombinedGeometry.Geometry2>
+
+				</CombinedGeometry>
+			</Path.Data>		
+		</Path>
+		<TextBlock Text="Union a rectangle and an ellipse" Grid.Row="0" Grid.Column="2"/>
+		<Path Stroke="Black" StrokeThickness="3" Fill="Red" Grid.Row="0" Grid.Column="2" Margin="25,50,0,0">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Union">
+					<CombinedGeometry.Geometry1>
+						<RectangleGeometry Rect="0,0,200,50"/>
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<EllipseGeometry RadiusX="50" RadiusY="50" Center="100,25"/>
+					</CombinedGeometry.Geometry2>				
+				</CombinedGeometry>
+			</Path.Data>		
+		</Path>
+		<TextBlock Text="Xor a rectangle and an ellipse" Grid.Row="1" Grid.Column="2"/>		
+		<Path Stroke="Black" StrokeThickness="3" Fill="Red" Grid.Row="1" Grid.Column="2" Margin="25,50,0,0">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Xor">
+					<CombinedGeometry.Geometry1>
+						<RectangleGeometry Rect="0,0,200,50"/>
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<EllipseGeometry RadiusX="50" RadiusY="50" Center="100,25"/>
+					</CombinedGeometry.Geometry2>				
+				</CombinedGeometry>
+			</Path.Data>		
+		</Path>				
+	</Grid>	
+	
+</Page>

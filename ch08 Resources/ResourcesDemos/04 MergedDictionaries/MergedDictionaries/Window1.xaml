@@ -1,0 +1,16 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="MergedDictionaries.Window1"
+	x:Name="Window"
+	Title="Window1"
+	Width="640" Height="480">
+
+    <Grid x:Name="LayoutRoot">
+        <Button HorizontalAlignment="Left" Margin="47,37,0,0"
+     VerticalAlignment="Top" Width="155" Height="95"
+      Content="Button" Template="{DynamicResource ButtonControlTemplate1}"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Margin="47,174.234,0,0" Height="66.081" 
+                Template="{DynamicResource ButtonControlTemplate2}"/>
+    </Grid>
+</Window>

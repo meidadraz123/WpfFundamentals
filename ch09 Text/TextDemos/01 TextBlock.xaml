@@ -1,0 +1,24 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+<Button>
+	<TextBlock FontFamily="Candara" FontSize="16" TextWrapping="Wrap" TextAlignment="Justify">
+		Although this is just a <Italic>humble</Italic>
+		<Span FontFamily="Old English Text MT">old</Span>
+		<Span FontFamily="Consolas" Foreground="#888">
+		&lt;<Span Foreground="#e00">Button</Span>/&gt;
+		</Span>
+		We are <Span FontFamily="Forte" Foreground="Blue">free</Span> to use
+		<Span>
+			<Span.Foreground>
+				<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+					<GradientStop Offset="0" Color="Black" />
+					<GradientStop Offset="1" Color="Magenta" />
+				</LinearGradientBrush>
+			</Span.Foreground>
+			interisting
+		</Span>
+		<Span Background="#cff0">text</Span> effects.
+	</TextBlock>
+</Button>
+</Page>
